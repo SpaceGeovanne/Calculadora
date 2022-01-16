@@ -36,7 +36,7 @@ public class Home extends JFrame {
 		this.setResizable(false);
         this.setTitle("Calculadora");
         this.setDefaultCloseOperation(3);
-        this.setBounds(180, 180, 280, 280);
+        this.setBounds(180, 180, 280, 380);
         (this.contentPane = new JPanel()).setBorder(new EmptyBorder(5, 5, 5, 5));
         this.setContentPane(this.contentPane);
         this.contentPane.setLayout(null);
@@ -67,6 +67,21 @@ public class Home extends JFrame {
         eq2g.setFont(new Font("Segoe UI", 1, 13));
         eq2g.setBounds(10, 60, 242, 30);
         this.contentPane.add(eq2g);
+        
+        JButton juros = new JButton("Juros Simples");
+        
+        juros.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				setVisible(false);
+				Juros.openPanel();
+			}
+		});
+        
+        juros.setFont(new Font("Segoe UI", 1, 13));
+        juros.setBounds(10, 100, 242, 30);
+        this.contentPane.add(juros);
 	}
 	
 	static /* synthetic */ void access$0(final Home home) {
