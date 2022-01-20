@@ -121,21 +121,8 @@ public class EquaçãoMenu extends JFrame {
 		});
         
         button.setFont(new Font("Segoe UI", 1, 13));
-        button.setBounds(10, 170, 242, 20);
+        button.setBounds(10, 180, 242, 30);
         this.contentPane.add(button);
-        
-        final JButton back = new JButton("Voltar");
-        back.addActionListener(new ActionListener() {
-			
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				setVisible(false);
-				Home.openPanel();
-			}
-		});
-        back.setFont(new Font("Segoe UI", 1, 13));
-        back.setBounds(10, 197, 242, 20);
-        this.contentPane.add(back);
 	}
 
 	public static boolean isInt(String s) {
